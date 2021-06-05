@@ -20,7 +20,7 @@ conda install -n myenv scipy
 
 or 
 
-``` python3
+```python3
 python3 -m pip install --upgrade pip
 pip3 install --upgrade virtualenv
 virtualenv -p python3 << name >>
@@ -48,7 +48,7 @@ interpreter = tflite.Interpreter(model_path = model_path)
   
 Simply run the Makefile in your terminal.
   
-```zsh
+```go
 make build  
 ```
  
