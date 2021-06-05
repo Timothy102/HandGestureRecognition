@@ -94,4 +94,6 @@ It has C++, Python, Java and MATLAB interfaces and supports Windows, Linux, Andr
   
  # Contact
   
+ Feel free to contact me with any proposals on LinkedIn: linkedin.com/in/tim-cvetko-32842a1a6/ or Mail: cvetko.tim@gmail.com :D
+  
   
