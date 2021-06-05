@@ -48,7 +48,7 @@ interpreter = tflite.Interpreter(model_path = model_path)
   
 Simply run the Makefile in your terminal.
   
-```golang
+```rb
 make build  
 ```
  
