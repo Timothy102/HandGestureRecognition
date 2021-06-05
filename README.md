@@ -9,7 +9,10 @@ Real-time recognition of dynamic hand gestures from video streams is a challengi
 
 * TF Lite Interpreter
 * A Virtual-Env or the conda enviroment is recommended. Use 
-``` conda create -n myenv python
+
+
+```bash
+conda create -n myenv python
 conda install -n myenv scipy 
 
 ```
@@ -17,7 +20,7 @@ conda install -n myenv scipy
 
 or 
 
-```
+``` python3
 python3 -m pip install --upgrade pip
 pip3 install --upgrade virtualenv
 virtualenv -p python3 << name >>
@@ -25,7 +28,7 @@ virtualenv -p python3 << name >>
 
 Download the TensorFlow Lite Interpreter from the website. 
 
-```
+```bash
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update
@@ -35,7 +38,7 @@ sudo apt-get install python3-tflite-runtime
 The inference part requires the TensorFlow Lite Interpreter alone. The neural network is already compressed in <tflite> format. Here's the Python code to initialize the interpreter.
   
   
-```
+``` python3
 import tflite_runtime.interpreter as tflite
 interpreter = tflite.Interpreter(model_path = model_path)  
 ``` 
